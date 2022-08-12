@@ -54,3 +54,13 @@ def powerOfNumber(base, exp):
         return base * powerOfNumber(base, exp - 1)
 
 print("Power of a number:", powerOfNumber(3, 3))
+
+
+# Finding greatest common divisor
+def gcd(x, y):
+    if x % y != 0:
+        return gcd(y, x%y)
+    else:
+        return y
+
+print("GCD:", gcd(456, 324))
